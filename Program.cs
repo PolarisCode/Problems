@@ -6,23 +6,29 @@ namespace Problem_Solving
     {
         static void Main(string[] args)
         {
-            ReverseInteger(551);
+            System.Console.WriteLine(ReverseInteger(-1534236469));
         }
 
-        public static void ReverseInteger(int input)
+        public static int ReverseInteger(int input)
         {
             //Given a 32-bit signed integer, reverse digits of an integer.
-
-            int num = input;
-            string result = string.Empty;
-
-            while (num > 0)
+            try
             {
-                result += (num % 10);
-                num = num / 10;
-            }
+                int num = Math.Abs(input);
+                int result = 0;
 
-            System.Console.WriteLine(input < 0 ? ("-" + result) : result);
+                while (num > 0)
+                {
+                    result = checked((num % 10) + result * 10);
+                    num = num / 10;
+                }
+
+                return (input < 0 ? (-1 * result) : result);
+            }
+            catch (OverflowException)
+            {
+                return 0;
+            }
         }
     }
 
