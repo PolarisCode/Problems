@@ -13,21 +13,25 @@ namespace Problem_Solving.SortingAlgorithms
         {
             int n = arr.Length;
 
+            // if element count<2 then array already is sorted
             if (n < 2)
                 return;
 
+            // break initial array into 2 parts
             int middle = n / 2;
 
             int i = 0;
 
-            int[] leftArr = new int[middle];
-            int[] rightArr = new int[n - middle];
+            int[] leftArr = new int[middle]; // specify left part
+            int[] rightArr = new int[n - middle]; // specify right part
 
+            // populate left array
             for (i = 0; i < middle; i++)
             {
-                leftArr[i] = arr[i];
+                leftArr[i] = arr[i]; 
             }
 
+            // populate right array;
             i = 0;
             for (int j = middle; j < n; j++)
             {
@@ -35,9 +39,11 @@ namespace Problem_Solving.SortingAlgorithms
                 i++;
             }
 
+            // go through each array trying to break them once again
             Sort(leftArr);
             Sort(rightArr);
 
+            // merge sorted left and right array
             Merge(leftArr, rightArr, arr);
         }
 
