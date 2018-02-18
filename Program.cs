@@ -1,4 +1,5 @@
 ﻿using System;
+using Problem_Solving.SortingAlgorithms;
 
 namespace Problem_Solving
 {
@@ -6,7 +7,13 @@ namespace Problem_Solving
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine(ReverseInteger(-1534236469));
+            //System.Console.WriteLine(ReverseInteger(-1534236469));
+            //System.Console.WriteLine(IsPalindrome(-10));
+
+
+            int[] arr= new int[]{5,1,4,9,3};
+            new MergeSort(arr);
+            System.Console.WriteLine(string.Join(",",arr));
         }
 
         public static int ReverseInteger(int input)
@@ -30,6 +37,25 @@ namespace Problem_Solving
                 return 0;
             }
         }
+
+        public static bool IsPalindrome(int input)
+        {
+            decimal palindromeVer = 0;
+
+            if (input < 0)
+                return false;
+
+            int num = input;
+
+            while (num > 0)
+            {
+                palindromeVer = num % 10 + palindromeVer * 10;
+                num = num / 10;
+            }
+
+            return palindromeVer == input;
+        }
+
     }
 
 }

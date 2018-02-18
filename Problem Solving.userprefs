@@ -1,3 +1,15 @@
 ﻿<Properties StartupConfiguration="{89F9E2D7-44D7-4A04-B94B-6E7E02244C49}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SortingAlgorithms/MergeSort.cs">
+    <Files>
+      <File FileName="SortingAlgorithms/MergeSort.cs" Line="7" Column="9" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Problem_220Solving PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

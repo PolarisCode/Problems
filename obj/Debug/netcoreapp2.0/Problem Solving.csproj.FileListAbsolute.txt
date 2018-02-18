@@ -8,3 +8,4 @@
 /Users/ialiyev/Google Диск/Projects/Problem Solving/obj/Debug/netcoreapp2.0/Problem Solving.AssemblyInfo.cs
 /Users/ialiyev/Google Диск/Projects/Problem Solving/obj/Debug/netcoreapp2.0/Problem Solving.dll
 /Users/ialiyev/Google Диск/Projects/Problem Solving/obj/Debug/netcoreapp2.0/Problem Solving.pdb
+/Users/ialiyev/Google Диск/Projects/Problem Solving/obj/Debug/netcoreapp2.0/Problem Solving.csprojResolveAssemblyReference.cache
