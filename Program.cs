@@ -12,7 +12,7 @@ namespace Problem_Solving
 
 
             int[] arr= new int[]{5,1,4,9,3};
-            new MergeSort(arr);
+            new InsertionSort(arr);
             System.Console.WriteLine(string.Join(",",arr));
         }
 
