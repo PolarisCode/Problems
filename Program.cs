@@ -11,8 +11,8 @@ namespace Problem_Solving
             //System.Console.WriteLine(IsPalindrome(-10));
 
 
-            int[] arr= new int[]{5,1,4,9,3};
-            new InsertionSort(arr);
+            int[] arr= new int[]{9,8,7,6,5,4};
+            new BubbleSort(arr);
             System.Console.WriteLine(string.Join(",",arr));
         }
 
