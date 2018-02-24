@@ -12,7 +12,7 @@ namespace Problem_Solving
 
 
             int[] arr= new int[]{9,8,7,6,5,4};
-            new SelectionSort(arr);
+            new QuickSort(arr);
             System.Console.WriteLine(string.Join(",",arr));
         }
 
